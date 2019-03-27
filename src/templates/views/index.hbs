@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" href="/img/partly_cloudy.png">
+    </link>
+    <link rel="stylesheet" href="./css/style.css">
+    </link>
+    
+    <title>Weather</title>
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p> Use this site to get your weather!</p>
+
+        <form>
+            <input placeholder="Location">
+            <button>Search</button>
+        </form>
+        <p id="m1"></p>
+        <p id="m2"></p>
+    </div>
+
+    <script src="/js/app.js"></script>
+    {{>footer}}
+</body>
+
+</html>
