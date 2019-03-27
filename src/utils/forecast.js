@@ -12,10 +12,12 @@ const forecast = (longitude, latitude, callback) => {
       callback('unable to find the webservice . try another test', undefined)
     }
     else {
-      callback(undefined, {
-        temperatureitude: response.body.currently.temperature,
-        precipProbability: response.body.currently.precipProbability
-      })
+
+        console.log(response.body.daily.data[0])
+
+      callback(undefined, 
+        'Current Tempature'+response.body.currently.temperature +' Raining Cnahces'+response.body.currently.precipProbability + 'Maximum Temparature'+ response.body.currently.temperatureMax +'Minimum Temparature'+response.body.currently.temperatureMin
+      )
     }
   })
 }
