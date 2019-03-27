@@ -8,7 +8,6 @@ const meassageTwo = document.querySelector('#m2')
 
 weatherForm.addEventListener('submit', (e) => {
     e.preventDefault()
-
     const location = search.value
 
     meassageOne.textContent = 'Loading...'
